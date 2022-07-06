@@ -24,7 +24,7 @@ namespace Demo.Tests
         [InlineData(2,3,5)]
         [InlineData(3,4,7)]
         [InlineData(4,5,9)]
-        public void Calculadora_Somar_EfeturarOperacaoSoma(double v1, double v2, double resultado)
+        public void Calculadora_Somar_EfeturarOperacaoSomaCorreta(double v1, double v2, double resultado)
         {
             // Arrange
             var calculadora = new Calculadora();
