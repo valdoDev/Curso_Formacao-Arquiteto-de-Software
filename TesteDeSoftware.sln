@@ -7,15 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Teste Unitario", "1 - T
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1 - Teste Basico", "1.1 - Teste Basico", "{17059129-7EE9-45A0-9321-9164546E6920}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo", "Demo\Demo.csproj", "{E97BD57B-68E5-40D5-BA08-7A3A94FE1697}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Tests", "Demo.Tests\Demo.Tests.csproj", "{5B0DD86A-C404-4E16-BE89-2EC6CED1ACB7}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Fundamentos de Arquitetura de Software", "1 - Fundamentos de Arquitetura de Software", "{7E8C44BC-DEFE-4B11-B3CB-5137319943AF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Modelagem de Domínios Ricos", "2 - Modelagem de Domínios Ricos", "{21F9D721-4983-4D1A-93E2-9E7052FCEDE9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Dominando os Testes de Software", "3 - Dominando os Testes de Software", "{BF8DB08C-80EA-4FA5-9542-8AAEC28ECD68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo", "1_Fundamentos_Arquitetura_Software\Demo\Demo.csproj", "{9B0A5EC3-3689-41EA-8653-B327BDDE4699}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Tests", "1_Fundamentos_Arquitetura_Software\Demo.Tests\Demo.Tests.csproj", "{29EC159F-3B9E-47E1-9D5E-9250FD62C794}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,14 +23,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E97BD57B-68E5-40D5-BA08-7A3A94FE1697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E97BD57B-68E5-40D5-BA08-7A3A94FE1697}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E97BD57B-68E5-40D5-BA08-7A3A94FE1697}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E97BD57B-68E5-40D5-BA08-7A3A94FE1697}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5B0DD86A-C404-4E16-BE89-2EC6CED1ACB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5B0DD86A-C404-4E16-BE89-2EC6CED1ACB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5B0DD86A-C404-4E16-BE89-2EC6CED1ACB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5B0DD86A-C404-4E16-BE89-2EC6CED1ACB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B0A5EC3-3689-41EA-8653-B327BDDE4699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B0A5EC3-3689-41EA-8653-B327BDDE4699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B0A5EC3-3689-41EA-8653-B327BDDE4699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B0A5EC3-3689-41EA-8653-B327BDDE4699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29EC159F-3B9E-47E1-9D5E-9250FD62C794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29EC159F-3B9E-47E1-9D5E-9250FD62C794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29EC159F-3B9E-47E1-9D5E-9250FD62C794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29EC159F-3B9E-47E1-9D5E-9250FD62C794}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,8 +38,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{87B50CCB-5A81-4252-9E7A-CEE3A04B9D5F} = {7E8C44BC-DEFE-4B11-B3CB-5137319943AF}
 		{17059129-7EE9-45A0-9321-9164546E6920} = {87B50CCB-5A81-4252-9E7A-CEE3A04B9D5F}
-		{E97BD57B-68E5-40D5-BA08-7A3A94FE1697} = {17059129-7EE9-45A0-9321-9164546E6920}
-		{5B0DD86A-C404-4E16-BE89-2EC6CED1ACB7} = {17059129-7EE9-45A0-9321-9164546E6920}
+		{9B0A5EC3-3689-41EA-8653-B327BDDE4699} = {17059129-7EE9-45A0-9321-9164546E6920}
+		{29EC159F-3B9E-47E1-9D5E-9250FD62C794} = {17059129-7EE9-45A0-9321-9164546E6920}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4D9630B0-FE95-4984-B32A-6E60FE934E90}
