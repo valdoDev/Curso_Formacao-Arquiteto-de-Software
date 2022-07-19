@@ -7,9 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Teste Unitario", "1 - T
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1 - Teste Basico", "1.1 - Teste Basico", "{17059129-7EE9-45A0-9321-9164546E6920}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{E97BD57B-68E5-40D5-BA08-7A3A94FE1697}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo", "Demo\Demo.csproj", "{E97BD57B-68E5-40D5-BA08-7A3A94FE1697}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Tests", "Demo.Tests\Demo.Tests.csproj", "{5B0DD86A-C404-4E16-BE89-2EC6CED1ACB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Tests", "Demo.Tests\Demo.Tests.csproj", "{5B0DD86A-C404-4E16-BE89-2EC6CED1ACB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Fundamentos de Arquitetura de Software", "1 - Fundamentos de Arquitetura de Software", "{7E8C44BC-DEFE-4B11-B3CB-5137319943AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Modelagem de Domínios Ricos", "2 - Modelagem de Domínios Ricos", "{21F9D721-4983-4D1A-93E2-9E7052FCEDE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Dominando os Testes de Software", "3 - Dominando os Testes de Software", "{BF8DB08C-80EA-4FA5-9542-8AAEC28ECD68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +36,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{87B50CCB-5A81-4252-9E7A-CEE3A04B9D5F} = {7E8C44BC-DEFE-4B11-B3CB-5137319943AF}
 		{17059129-7EE9-45A0-9321-9164546E6920} = {87B50CCB-5A81-4252-9E7A-CEE3A04B9D5F}
 		{E97BD57B-68E5-40D5-BA08-7A3A94FE1697} = {17059129-7EE9-45A0-9321-9164546E6920}
 		{5B0DD86A-C404-4E16-BE89-2EC6CED1ACB7} = {17059129-7EE9-45A0-9321-9164546E6920}
