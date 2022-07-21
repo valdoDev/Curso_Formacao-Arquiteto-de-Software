@@ -1,11 +1,9 @@
-﻿using NerdStore.Core;
+﻿using NerdStore.Core.DomainObjects;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace NerdStore.Catalogo.Domain
 {
-    public class Produto : Entity, IAggregateRoot 
+    public class Produto : Entity, IAggregateRoot
     {
         public Guid CategoriaId { get; private set; }
         public string Nome { get; private set; }
@@ -27,6 +25,8 @@ namespace NerdStore.Catalogo.Domain
             Valor = valor;
             DataCadastro = dataCadastro;
             Imagem = imagem;
+
+            Validar();
         }
 
         // Exemplo de Ad hoc Setter
@@ -59,6 +59,15 @@ namespace NerdStore.Catalogo.Domain
         public bool PossuiEstoque(int quantidade)
         {
             return QuantidadeEstoque >= quantidade;
+        }
+
+        public void Validar()
+        {
+            AssertionConcern.ValidarSeVazio(Nome, "O campo Nome do produto não pode estar vazio");
+            AssertionConcern.ValidarSeVazio(Descricao, "O campo Descricao do produto não pode estar vazio");
+            AssertionConcern.ValidarSeIgual(CategoriaId, Guid.Empty, "O campo CategoriaId do produto não pode estar vazio");
+            AssertionConcern.ValidarSeMenorQue(Valor, 1, "O campo Valor do produto não pode se menor igual a 0");
+            AssertionConcern.ValidarSeVazio(Imagem, "O campo Imagem do produto não pode estar vazio");
         }
 
     }

@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace NerdStore.Core
+namespace NerdStore.Core.DomainObjects
 {
     public abstract class Entity
     {
@@ -41,7 +39,7 @@ namespace NerdStore.Core
 
         public override int GetHashCode()
         {
-            return (GetType().GetHashCode() * 907) + Id.GetHashCode();
+            return GetType().GetHashCode() * 907 + Id.GetHashCode();
         }
 
         public override string ToString()

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Xunit;
+﻿using Xunit;
 
 namespace Demo.Tests
 {
@@ -24,7 +21,7 @@ namespace Demo.Tests
             {
                 case NivelProfissional.Junior:
                     Assert.InRange(funcionario.Salario, 500, 1999);
-                    
+
                     break;
                 case NivelProfissional.Pleno:
                     Assert.InRange(funcionario.Salario, 2000, 7999);

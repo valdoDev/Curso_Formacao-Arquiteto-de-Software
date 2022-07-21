@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Xunit;
+﻿using Xunit;
 
 namespace Demo.Tests
 {
@@ -30,7 +27,7 @@ namespace Demo.Tests
         }
 
         [Fact]
-        public  void Funcionario_habilidades_JuniorNaoDevePossuirHabilidadeAvancada()
+        public void Funcionario_habilidades_JuniorNaoDevePossuirHabilidadeAvancada()
         {
             // Arrange &  Act
             var funcionario = FuncionarioFactory.Criar("Eduardo", 1000);

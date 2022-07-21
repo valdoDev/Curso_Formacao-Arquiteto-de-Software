@@ -1,4 +1,3 @@
-using System;
 using Xunit;
 
 namespace Demo.Tests
@@ -15,15 +14,15 @@ namespace Demo.Tests
             var resultado = calculadora.Somar(2, 2);
 
             // Assert
-            Assert.Equal(4,resultado);
+            Assert.Equal(4, resultado);
 
         }
 
         [Theory]
-        [InlineData(1,2,3)]
-        [InlineData(2,3,5)]
-        [InlineData(3,4,7)]
-        [InlineData(4,5,9)]
+        [InlineData(1, 2, 3)]
+        [InlineData(2, 3, 5)]
+        [InlineData(3, 4, 7)]
+        [InlineData(4, 5, 9)]
         public void Calculadora_Somar_EfeturarOperacaoSomaCorreta(double v1, double v2, double resultado)
         {
             // Arrange

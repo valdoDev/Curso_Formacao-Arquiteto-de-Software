@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
 namespace Demo.Tests
@@ -9,7 +7,8 @@ namespace Demo.Tests
     {
 
         [Fact]
-        public void Calculadora_Dividir_DeveRetornarErroDivisaoPorZero() {
+        public void Calculadora_Dividir_DeveRetornarErroDivisaoPorZero()
+        {
 
             // Arrange
             var calculadora = new Calculadora();

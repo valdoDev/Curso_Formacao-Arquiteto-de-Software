@@ -1,7 +1,5 @@
-﻿using NerdStore.Core;
-using System;
+﻿using NerdStore.Core.DomainObjects;
 using System.Collections.Generic;
-using System.Text;
 
 namespace NerdStore.Catalogo.Domain
 {
@@ -19,11 +17,19 @@ namespace NerdStore.Catalogo.Domain
         {
             Nome = nome;
             Codigo = codigo;
+
+            Validar();
         }
 
         public override string ToString()
         {
             return $"{Nome} - {Codigo}";
+        }
+
+        public void Validar()
+        {
+            AssertionConcern.ValidarSeVazio(Nome, "O campo Nome da categoria não pode estar vazio");
+            AssertionConcern.ValidarSeIgual(Codigo, 0, "O campo Codigo não pode ser 0");
         }
     }
 }
