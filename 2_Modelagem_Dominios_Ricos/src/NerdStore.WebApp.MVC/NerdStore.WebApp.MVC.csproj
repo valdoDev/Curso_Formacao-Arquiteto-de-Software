@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-NerdStore.WebApp.MVC-FE0B04D5-0780-4DF7-BA2F-97EF44E11AE4</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.27" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.27" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.27" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NerdStore.Catalogo.Application\NerdStore.Catalogo.Application.csproj" />
+    <ProjectReference Include="..\NerdStore.Catalogo.Data\NerdStore.Catalogo.Data.csproj" />
+    <ProjectReference Include="..\NerdStore.Catalogo.Domain\NerdStore.Catalogo.Domain.csproj" />
+    <ProjectReference Include="..\NerdStore.Core\NerdStore.Core.csproj" />
+  </ItemGroup>
+
+</Project>
